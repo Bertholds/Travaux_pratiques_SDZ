@@ -4,6 +4,7 @@ Public class Etudiant{
 	private String prenom;
 	private int age;
 	private String campus;
+	private double moyenne;
 
 	public Etudiant(){
 	}
@@ -13,6 +14,14 @@ Public class Etudiant{
 		this.prenom = prenom;
 		this.age = age;
 		this.campus = campus;
+	}
+	
+	//redouble ou admis au niveau sup
+	public boolean verdict(double moyene){
+	   if(moyenne>=12)
+		   return true;
+	   else
+		   return false;
 	}
 
 	//write getter and setter here
